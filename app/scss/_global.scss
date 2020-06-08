@@ -6,9 +6,8 @@ html{
 }
 html,
 body {
-	height: 100%;
+    height: 100%;
 }
-
 a{
     display: inline-block;
     text-decoration: none;
@@ -25,6 +24,16 @@ body{
     font-size: 15px;
     line-height: 24px;
     color: $text;
+    .wrapper{
+        position: relative;
+        overflow-x: hidden;
+    }
+    
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -97,5 +106,17 @@ body{
         a{
             color:#b0bec5;
         }
+    }
+}
+.angle-right{
+    position: relative;
+    padding-left: 15px;
+    &::before{
+        content: '\f105';
+        position: absolute;
+        font-family: 'icomoon';
+        left: 0;
+        color: $green;
+        font-size: 14px;
     }
 }
